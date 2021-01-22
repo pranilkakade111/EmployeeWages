@@ -32,7 +32,10 @@ randomCheck=$((RANDOM%3));
 
 if [ $isFulltTime -eq $randomCheck ];
 then
-    empHrs=4;
+    empHrs=8;
+elif [ $isPartTime -eq $randomCheck ];
+then
+     empHrs=4;
 else
      empHrs=0;
 fi
